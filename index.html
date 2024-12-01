@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>vercel</title>
 </head>
 <body>
-    <script src="config.js"></script> 
+    <h1>Welcome to Vercel CI/CD Demo</h1>
+     <p>Your secret key is: <span 
+        id="secretKey"></span></p>
+         <script src="config.js"> const secretKey = process.env.MY_SECRET_KEY; 
+        document.getElementById("secretKey").textContent = secretKey; </script> 
 </body>
 </html>
